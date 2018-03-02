@@ -1,12 +1,19 @@
 import React from "react"
 import UserForm from "./components/UserForm"
 import SocialForm from "./components/SocialForm"
+import styled from "styled-components"
 import Paper from "material-ui/Paper"
 import Grid from "material-ui/Grid"
 
+const Background = styled.div`
+    background-color: #eeeeee;
+    height: 100vh;
+    padding: 10px;
+`
+
 const App = () => {
     return (
-        <div>
+        <Background>
             <center>
                 <h1>Registration Form</h1>
             </center>
@@ -22,7 +29,7 @@ const App = () => {
                     </Paper>
                 </Grid>
             </Grid>
-        </div>
+        </Background>
     )
 }
 

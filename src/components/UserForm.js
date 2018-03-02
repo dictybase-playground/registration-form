@@ -2,6 +2,9 @@ import React from "react"
 import { withFormik, Form, Field } from "formik"
 import Yup from "yup"
 import TextField from "material-ui/TextField"
+import Button from "material-ui/Button"
+import Select from "material-ui/Select"
+import countryList from "../utils/countryList"
 
 const InnerForm = ({
     values,
@@ -9,7 +12,8 @@ const InnerForm = ({
     touched,
     isSubmitting,
     handleChange,
-    handleBlur
+    handleBlur,
+    setFieldValue
 }) => {
     return (
         <Form>
@@ -121,14 +125,22 @@ const InnerForm = ({
                 />
             </div>
             <div>
-                <TextField
+                <Select
                     type="country"
                     name="country"
-                    placeholder="Country"
                     value={values.country}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                />
+                    onChange={e => setFieldValue("country", e.target.value)}>
+                    {countryList &&
+                        countryList.map(item => {
+                            return (
+                                <option
+                                    key={countryList.indexOf(item)}
+                                    value={item}>
+                                    {item}
+                                </option>
+                            )
+                        })}
+                </Select>
             </div>
             <div>
                 <TextField
@@ -160,6 +172,13 @@ const InnerForm = ({
                     onBlur={handleBlur}
                 />
             </div>
+            <Button
+                type="submit"
+                variant="raised"
+                color="primary"
+                disabled={isSubmitting}>
+                {isSubmitting ? "Submitting..." : "Submit"}
+            </Button>
         </Form>
     )
 }
@@ -212,7 +231,7 @@ const UserForm = withFormik({
         state: Yup.string(),
         region: Yup.string(),
         country: Yup.string(),
-        zip: Yup.number(),
+        zip: Yup.string(),
         webLink1: Yup.string(),
         webLink2: Yup.string()
     }),
@@ -220,6 +239,7 @@ const UserForm = withFormik({
         setTimeout(() => {
             resetForm()
             setSubmitting(false)
+            console.log(JSON.stringify(values))
         }, 1000)
     }
 })(InnerForm)
