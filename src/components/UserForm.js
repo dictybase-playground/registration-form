@@ -5,6 +5,7 @@ import TextField from "material-ui/TextField"
 import Button from "material-ui/Button"
 import Select from "material-ui/Select"
 import countryList from "../utils/countryList"
+import stateList from "../utils/stateList"
 
 const InnerForm = ({
     values,
@@ -105,14 +106,22 @@ const InnerForm = ({
                 />
             </div>
             <div>
-                <TextField
+                <Select
                     type="state"
                     name="state"
-                    placeholder="State/Province"
                     value={values.state}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                />
+                    onChange={e => setFieldValue("state", e.target.value)}>
+                    {stateList &&
+                        stateList.map(item => {
+                            return (
+                                <option
+                                    key={stateList.indexOf(item)}
+                                    value={item}>
+                                    {item}
+                                </option>
+                            )
+                        })}
+                </Select>
             </div>
             <div>
                 <TextField
