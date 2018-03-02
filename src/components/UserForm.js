@@ -1,9 +1,12 @@
 import React from "react"
-import { withFormik, Form, Field } from "formik"
+import { withFormik, Form } from "formik"
 import Yup from "yup"
 import TextField from "material-ui/TextField"
 import Button from "material-ui/Button"
 import Select from "material-ui/Select"
+import { MenuItem } from "material-ui/Menu"
+// import { FormControl } from "material-ui/Form"
+import { InputLabel } from "material-ui/Input"
 import countryList from "../utils/countryList"
 import stateList from "../utils/stateList"
 
@@ -22,10 +25,11 @@ const InnerForm = ({
                 <TextField
                     type="firstName"
                     name="firstName"
-                    placeholder="First Name"
+                    label="First Name"
                     value={values.firstName}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
                 {touched.firstName &&
                     errors.firstName && <div>{errors.firstName}</div>}
@@ -34,10 +38,11 @@ const InnerForm = ({
                 <TextField
                     type="lastName"
                     name="lastName"
-                    placeholder="Last Name"
+                    label="Last Name"
                     value={values.lastName}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
                 {touched.lastName &&
                     errors.lastName && <div>{errors.lastName}</div>}
@@ -46,10 +51,11 @@ const InnerForm = ({
                 <TextField
                     type="email"
                     name="email"
-                    placeholder="Email"
+                    label="Email"
                     value={values.email}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
                 {touched.email && errors.email && <div>{errors.email}</div>}
             </div>
@@ -57,20 +63,22 @@ const InnerForm = ({
                 <TextField
                     type="jobTitle"
                     name="jobTitle"
-                    placeholder="Job Title/Position"
+                    label="Job Title/Position"
                     value={values.jobTitle}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
             <div>
                 <TextField
                     type="organization"
                     name="organization"
-                    placeholder="Organization"
+                    label="Organization"
                     value={values.organization}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
                 {touched.organization &&
                     errors.organization && <div>{errors.organization}</div>}
@@ -79,46 +87,51 @@ const InnerForm = ({
                 <TextField
                     type="address1"
                     name="address1"
-                    placeholder="Street Address"
+                    label="Street Address"
                     value={values.address1}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
             <div>
                 <TextField
                     type="address2"
                     name="address2"
-                    placeholder="Street Address (if necessary)"
+                    label="Street Address"
                     value={values.address2}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
             <div>
                 <TextField
                     type="city"
                     name="city"
-                    placeholder="City"
+                    label="City"
                     value={values.city}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
+            <br />
             <div>
+                <InputLabel>State</InputLabel>
                 <Select
-                    type="state"
                     name="state"
+                    fullWidth
                     value={values.state}
                     onChange={e => setFieldValue("state", e.target.value)}>
                     {stateList &&
                         stateList.map(item => {
                             return (
-                                <option
+                                <MenuItem
                                     key={stateList.indexOf(item)}
                                     value={item}>
                                     {item}
-                                </option>
+                                </MenuItem>
                             )
                         })}
                 </Select>
@@ -127,26 +140,30 @@ const InnerForm = ({
                 <TextField
                     type="region"
                     name="region"
-                    placeholder="Region"
+                    label="Region"
                     value={values.region}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
+            <br />
             <div>
+                <InputLabel>Country</InputLabel>
                 <Select
-                    type="country"
                     name="country"
+                    label="Country"
+                    fullWidth
                     value={values.country}
                     onChange={e => setFieldValue("country", e.target.value)}>
                     {countryList &&
                         countryList.map(item => {
                             return (
-                                <option
+                                <MenuItem
                                     key={countryList.indexOf(item)}
                                     value={item}>
                                     {item}
-                                </option>
+                                </MenuItem>
                             )
                         })}
                 </Select>
@@ -155,32 +172,36 @@ const InnerForm = ({
                 <TextField
                     type="zip"
                     name="zip"
-                    placeholder="Zip/Postal Code"
+                    label="Zip/Postal Code"
                     value={values.zip}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
             <div>
                 <TextField
                     type="webLink1"
                     name="webLink1"
-                    placeholder="Web Link 1"
+                    label="Web Link 1"
                     value={values.webLink1}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
             <div>
                 <TextField
                     type="webLink2"
                     name="webLink2"
-                    placeholder="Web Link 2"
+                    label="Web Link 2"
                     value={values.webLink2}
                     onChange={handleChange}
                     onBlur={handleBlur}
+                    fullWidth
                 />
             </div>
+            <br />
             <Button
                 type="submit"
                 variant="raised"

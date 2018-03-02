@@ -17,13 +17,13 @@ const App = () => {
             <center>
                 <h1>Registration Form</h1>
             </center>
-            <Grid container spacing={24}>
-                <Grid item xs={6}>
-                    <Paper>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={4}>
+                    <Paper style={{ padding: "10px" }}>
                         <UserForm />
                     </Paper>
                 </Grid>
-                <Grid item xs={6}>
+                <Grid item xs={4}>
                     <Paper>
                         <SocialForm />
                     </Paper>
