@@ -3,7 +3,14 @@ import { withFormik, Form, Field } from "formik"
 import Yup from "yup"
 import TextField from "material-ui/TextField"
 
-const InnerForm = ({ values, errors, touched, isSubmitting }) => {
+const InnerForm = ({
+    values,
+    errors,
+    touched,
+    isSubmitting,
+    handleChange,
+    handleBlur
+}) => {
     return (
         <Form>
             <div>
@@ -11,80 +18,146 @@ const InnerForm = ({ values, errors, touched, isSubmitting }) => {
                     type="firstName"
                     name="firstName"
                     placeholder="First Name"
+                    value={values.firstName}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
                 {touched.firstName &&
                     errors.firstName && <div>{errors.firstName}</div>}
             </div>
             <div>
-                <Field
+                <TextField
                     type="lastName"
                     name="lastName"
                     placeholder="Last Name"
+                    value={values.lastName}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
                 {touched.lastName &&
                     errors.lastName && <div>{errors.lastName}</div>}
             </div>
             <div>
-                <Field type="email" name="email" placeholder="Email" />
+                <TextField
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                    value={values.email}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
                 {touched.email && errors.email && <div>{errors.email}</div>}
             </div>
             <div>
-                <Field
+                <TextField
                     type="jobTitle"
                     name="jobTitle"
                     placeholder="Job Title/Position"
+                    value={values.jobTitle}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
             </div>
             <div>
-                <Field
+                <TextField
                     type="organization"
                     name="organization"
                     placeholder="Organization"
+                    value={values.organization}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
                 {touched.organization &&
                     errors.organization && <div>{errors.organization}</div>}
             </div>
             <div>
-                <Field
+                <TextField
                     type="address1"
                     name="address1"
                     placeholder="Street Address"
+                    value={values.address1}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
             </div>
             <div>
-                <Field
+                <TextField
                     type="address2"
                     name="address2"
                     placeholder="Street Address (if necessary)"
+                    value={values.address2}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
             </div>
             <div>
-                <Field type="city" name="city" placeholder="City" />
+                <TextField
+                    type="city"
+                    name="city"
+                    placeholder="City"
+                    value={values.city}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
             </div>
             <div>
-                <Field type="state" name="state" placeholder="State/Province" />
+                <TextField
+                    type="state"
+                    name="state"
+                    placeholder="State/Province"
+                    value={values.state}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
             </div>
             <div>
-                <Field type="region" name="region" placeholder="Region" />
+                <TextField
+                    type="region"
+                    name="region"
+                    placeholder="Region"
+                    value={values.region}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
             </div>
             <div>
-                <Field type="country" name="country" placeholder="Country" />
+                <TextField
+                    type="country"
+                    name="country"
+                    placeholder="Country"
+                    value={values.country}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
             </div>
             <div>
-                <Field type="zip" name="zip" placeholder="Zip/Postal Code" />
+                <TextField
+                    type="zip"
+                    name="zip"
+                    placeholder="Zip/Postal Code"
+                    value={values.zip}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                />
             </div>
             <div>
-                <Field
+                <TextField
                     type="webLink1"
                     name="webLink1"
                     placeholder="Web Link 1"
+                    value={values.webLink1}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
             </div>
             <div>
-                <Field
+                <TextField
                     type="webLink2"
                     name="webLink2"
                     placeholder="Web Link 2"
+                    value={values.webLink2}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
                 />
             </div>
         </Form>
