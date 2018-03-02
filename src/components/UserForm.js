@@ -1,12 +1,13 @@
 import React from "react"
 import { withFormik, Form, Field } from "formik"
 import Yup from "yup"
+import TextField from "material-ui/TextField"
 
 const InnerForm = ({ values, errors, touched, isSubmitting }) => {
     return (
         <Form>
             <div>
-                <Field
+                <TextField
                     type="firstName"
                     name="firstName"
                     placeholder="First Name"
