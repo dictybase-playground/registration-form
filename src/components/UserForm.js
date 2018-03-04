@@ -2,8 +2,8 @@ import React, { Component } from "react"
 // import { Formik, Form } from "formik"
 import GroupForm from "./GroupForm"
 import Grid from "material-ui/Grid"
-import Button from "material-ui/Button"
-import Icon from "material-ui/Icon"
+import NextButton from "../common/NextButton"
+import BackButton from "../common/BackButton"
 
 class UserForm extends Component {
     state = { showGroupForm: false }
@@ -31,21 +31,8 @@ class UserForm extends Component {
                                 <input type="text" name="firstName" />
                                 <input type="text" name="lastName" />
                             </div>
-                            <Button
-                                onClick={this.props.onBackClick}
-                                size="small"
-                                variant="raised"
-                                color="secondary">
-                                <Icon>arrow back</Icon>
-                                Back
-                            </Button>
-                            <Button
-                                type="submit"
-                                size="small"
-                                variant="raised"
-                                color="primary">
-                                Next <Icon>arrow forward</Icon>
-                            </Button>
+                            <BackButton onBackClick={this.props.onBackClick} />
+                            <NextButton />
                         </form>
                     </center>
                 </Grid>

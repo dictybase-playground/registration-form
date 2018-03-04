@@ -1,9 +1,8 @@
 import React, { Component } from "react"
 // import { Formik, Form } from "formik"
 import SocialForm from "./SocialForm"
+import NextButton from "../common/NextButton"
 import Grid from "material-ui/Grid"
-import Button from "material-ui/Button"
-import Icon from "material-ui/Icon"
 
 class MainAccount extends Component {
     state = { showSocialForm: false }
@@ -31,14 +30,8 @@ class MainAccount extends Component {
                             <div>
                                 <input type="text" name="mainAccount" />
                             </div>
-
-                            <Button
-                                type="submit"
-                                size="small"
-                                variant="raised"
-                                color="primary">
-                                Next <Icon>arrow forward</Icon>
-                            </Button>
+                            <br />
+                            <NextButton />
                         </form>
                     </center>
                 </Grid>

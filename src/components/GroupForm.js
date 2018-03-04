@@ -2,8 +2,8 @@ import React, { Component } from "react"
 // import { Formik, Form } from "formik"
 import FinalReview from "./FinalReview"
 import Grid from "material-ui/Grid"
-import Button from "material-ui/Button"
-import Icon from "material-ui/Icon"
+import NextButton from "../common/NextButton"
+import BackButton from "../common/BackButton"
 
 class GroupForm extends Component {
     state = { showFinalReview: false }
@@ -35,21 +35,8 @@ class GroupForm extends Component {
                                 <input type="text" name="facebook" />
                                 <input type="text" name="linkedin" />
                             </div>
-                            <Button
-                                onClick={this.props.onBackClick}
-                                size="small"
-                                variant="raised"
-                                color="secondary">
-                                <Icon>arrow back</Icon>
-                                Back
-                            </Button>
-                            <Button
-                                type="submit"
-                                size="small"
-                                variant="raised"
-                                color="primary">
-                                Next <Icon>arrow forward</Icon>
-                            </Button>
+                            <BackButton onBackClick={this.props.onBackClick} />
+                            <NextButton />
                         </form>
                     </center>
                 </Grid>
