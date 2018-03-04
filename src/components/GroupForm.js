@@ -1,22 +1,24 @@
 import React, { Component } from "react"
 // import { Formik, Form } from "formik"
-import UserForm from "./UserForm"
+import FinalReview from "./FinalReview"
 import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
 import Icon from "material-ui/Icon"
 
-class SocialForm extends Component {
-    state = { showUserForm: false }
+class GroupForm extends Component {
+    state = { showFinalReview: false }
 
     handleSubmit = () => {
-        this.setState({ showUserForm: true })
+        this.setState({ showFinalReview: true })
     }
 
     renderContent() {
-        if (this.state.showUserForm) {
+        if (this.state.showFinalReview) {
             return (
-                <UserForm
-                    onBackClick={() => this.setState({ showUserForm: false })}
+                <FinalReview
+                    onBackClick={() =>
+                        this.setState({ showFinalReview: false })
+                    }
                 />
             )
         }
@@ -25,7 +27,7 @@ class SocialForm extends Component {
             <div>
                 <Grid item xs={12}>
                     <center>
-                        <h3>Social IDs</h3>
+                        <h3>Group/Lab Information</h3>
                         <form onSubmit={this.handleSubmit}>
                             <div>
                                 <input type="text" name="google" />
@@ -59,4 +61,4 @@ class SocialForm extends Component {
     }
 }
 
-export default SocialForm
+export default GroupForm

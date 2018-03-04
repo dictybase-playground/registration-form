@@ -1,8 +1,6 @@
 import React from "react"
-import UserForm from "./components/UserForm"
-import SocialForm from "./components/SocialForm"
+import MainAccount from "./components/MainAccount"
 import styled from "styled-components"
-import Paper from "material-ui/Paper"
 import Grid from "material-ui/Grid"
 
 const Background = styled.div`
@@ -18,16 +16,7 @@ const App = () => {
                 <h1>Registration Form</h1>
             </center>
             <Grid container justify="center" spacing={24}>
-                <Grid item xs={4}>
-                    <Paper style={{ padding: "10px" }}>
-                        <UserForm />
-                    </Paper>
-                </Grid>
-                <Grid item xs={4}>
-                    <Paper>
-                        <SocialForm />
-                    </Paper>
-                </Grid>
+                <MainAccount />
             </Grid>
         </Background>
     )

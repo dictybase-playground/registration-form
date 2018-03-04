@@ -1,22 +1,23 @@
 import React, { Component } from "react"
 // import { Formik, Form } from "formik"
-import GroupForm from "./GroupForm"
+import SocialForm from "./SocialForm"
 import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
 import Icon from "material-ui/Icon"
 
-class UserForm extends Component {
-    state = { showGroupForm: false }
+class MainAccount extends Component {
+    state = { showSocialForm: false }
 
-    handleSubmit = () => {
-        this.setState({ showGroupForm: true })
+    handleSubmit = e => {
+        e.preventDefault()
+        this.setState({ showSocialForm: true })
     }
 
     renderContent() {
-        if (this.state.showGroupForm) {
+        if (this.state.showSocialForm) {
             return (
-                <GroupForm
-                    onBackClick={() => this.setState({ showGroupForm: false })}
+                <SocialForm
+                    onBackClick={() => this.setState({ showSocialForm: false })}
                 />
             )
         }
@@ -25,20 +26,12 @@ class UserForm extends Component {
             <div>
                 <Grid item xs={12}>
                     <center>
-                        <h3>User Information</h3>
+                        <h3>Please enter your main Dicty account</h3>
                         <form onSubmit={this.handleSubmit}>
                             <div>
-                                <input type="text" name="firstName" />
-                                <input type="text" name="lastName" />
+                                <input type="text" name="mainAccount" />
                             </div>
-                            <Button
-                                onClick={this.props.onBackClick}
-                                size="small"
-                                variant="raised"
-                                color="secondary">
-                                <Icon>arrow back</Icon>
-                                Back
-                            </Button>
+
                             <Button
                                 type="submit"
                                 size="small"
@@ -57,4 +50,4 @@ class UserForm extends Component {
     }
 }
 
-export default UserForm
+export default MainAccount
