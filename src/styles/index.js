@@ -16,7 +16,13 @@ export const Background = styled.div`
 
 export const HeaderStyle = styled.div`
     background: #3f51b5;
-    color: white;
+    color: #fff;
     padding: 5px;
     text-align: center;
+`
+
+export const ErrorStyle = styled.div`
+    color: #f44336;
+    margin-top: 5px;
+    margin-bottom: 10px;
 `

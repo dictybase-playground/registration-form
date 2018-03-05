@@ -10,7 +10,7 @@ import { InputLabel } from "material-ui/Input"
 import countryList from "../utils/countryList"
 import stateList from "../utils/stateList"
 import provinceList from "../utils/provinceList"
-import { HeaderStyle } from "../styles"
+import { HeaderStyle, ErrorStyle } from "../styles"
 
 const InnerForm = ({
     values,
@@ -23,6 +23,54 @@ const InnerForm = ({
 }) => {
     return (
         <Form>
+            <HeaderStyle>
+                <h3>Your Social IDs</h3>
+            </HeaderStyle>
+            <div>
+                <TextField
+                    type="google"
+                    name="google"
+                    label="Google"
+                    value={values.google}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <div>
+                <TextField
+                    type="orcid"
+                    name="orcid"
+                    label="ORCID"
+                    value={values.orcid}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <div>
+                <TextField
+                    type="linkedin"
+                    name="linkedin"
+                    label="LinkedIn"
+                    value={values.linkedin}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <div>
+                <TextField
+                    type="facebook"
+                    name="facebook"
+                    label="Facebook"
+                    value={values.facebook}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <br />
             <HeaderStyle>
                 <h3>Your Address and Contact Information</h3>
             </HeaderStyle>
@@ -37,7 +85,9 @@ const InnerForm = ({
                     fullWidth
                 />
                 {touched.firstName &&
-                    errors.firstName && <div>{errors.firstName}</div>}
+                    errors.firstName && (
+                        <ErrorStyle>* {errors.firstName}</ErrorStyle>
+                    )}
             </div>
             <div>
                 <TextField
@@ -50,7 +100,9 @@ const InnerForm = ({
                     fullWidth
                 />
                 {touched.lastName &&
-                    errors.lastName && <div>{errors.lastName}</div>}
+                    errors.lastName && (
+                        <ErrorStyle>* {errors.lastName}</ErrorStyle>
+                    )}
             </div>
             <div>
                 <TextField
@@ -62,7 +114,8 @@ const InnerForm = ({
                     onBlur={handleBlur}
                     fullWidth
                 />
-                {touched.email && errors.email && <div>{errors.email}</div>}
+                {touched.email &&
+                    errors.email && <ErrorStyle>* {errors.email}</ErrorStyle>}
             </div>
             <div>
                 <TextField
@@ -86,7 +139,9 @@ const InnerForm = ({
                     fullWidth
                 />
                 {touched.organization &&
-                    errors.organization && <div>{errors.organization}</div>}
+                    errors.organization && (
+                        <ErrorStyle>* {errors.organization}</ErrorStyle>
+                    )}
             </div>
             <div>
                 <TextField
@@ -220,6 +275,7 @@ const InnerForm = ({
                     type="webLink1"
                     name="webLink1"
                     label="Web Link 1"
+                    placeholder="http://"
                     value={values.webLink1}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -231,6 +287,7 @@ const InnerForm = ({
                     type="webLink2"
                     name="webLink2"
                     label="Web Link 2"
+                    placeholder="http://"
                     value={values.webLink2}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -557,6 +614,10 @@ const InnerForm = ({
 
 const UserForm = withFormik({
     mapPropsToValues({
+        google,
+        orcid,
+        linkedin,
+        facebook,
         firstName,
         lastName,
         email,
@@ -598,6 +659,10 @@ const UserForm = withFormik({
         interests
     }) {
         return {
+            google: google || "",
+            orcid: orcid || "",
+            linkedin: linkedin || "",
+            facebook: facebook || "",
             firstName: firstName || "",
             lastName: lastName || "",
             email: email || "",
@@ -662,6 +727,7 @@ const UserForm = withFormik({
         setTimeout(() => {
             resetForm()
             setSubmitting(false)
+            alert(JSON.stringify(values))
             console.log(JSON.stringify(values))
         }, 1000)
     }
