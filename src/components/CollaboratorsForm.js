@@ -1,91 +1,80 @@
 import React, { Component } from "react"
 // import { Formik, Form } from "formik"
-import GroupForm from "./GroupForm"
+import FinalReview from "./FinalReview"
 import Grid from "material-ui/Grid"
 import TextField from "material-ui/TextField"
 import NextButton from "../common/NextButton"
 import BackButton from "../common/BackButton"
 import { AlignRight, AlignLeft } from "../styles"
 
-class UserForm extends Component {
-    state = { showGroupForm: false }
+class CollaboratorsForm extends Component {
+    state = { showFinalReview: false }
 
     handleSubmit = () => {
-        this.setState({ showGroupForm: true })
+        this.setState({ showFinalReview: true })
     }
 
     renderContent() {
-        if (this.state.showGroupForm) {
+        if (this.state.showFinalReview) {
             return (
-                <GroupForm
-                    onBackClick={() => this.setState({ showGroupForm: false })}
+                <FinalReview
+                    onBackClick={() =>
+                        this.setState({ showFinalReview: false })
+                    }
                 />
             )
         }
 
         return (
             <Grid container justify="center" spacing={24}>
-                <Grid item xs={8}>
+                <Grid item xs={7}>
                     <center>
-                        <h3>Your Address and Contact Information</h3>
+                        <h3>Your Collaborators and Associates</h3>
+                        <p>
+                            Enter the names of your collaborators or associates
+                            (not listed previously):
+                        </p>
                     </center>
                     <form onSubmit={this.handleSubmit}>
                         <Grid container justify="center" spacing={24}>
                             <Grid item xs={12} sm={6}>
                                 <div>
                                     <TextField
-                                        type="firstName"
-                                        name="firstName"
-                                        label="First Name"
+                                        type="text"
+                                        name="collaborator1"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="lastName"
-                                        name="lastName"
-                                        label="Last Name"
+                                        type="text"
+                                        name="collaborator2"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="email"
-                                        name="email"
-                                        label="Email"
+                                        type="text"
+                                        name="collaborator3"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="jobTitle"
-                                        name="jobTitle"
-                                        label="Job Title/Position"
+                                        type="text"
+                                        name="collaborator4"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="organization"
-                                        name="organization"
-                                        label="Organization"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div>
-                                    <TextField
-                                        type="phone"
-                                        name="phone"
-                                        label="Phone Number"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div>
-                                    <TextField
-                                        type="webpage"
-                                        name="webpage"
-                                        label="Webpage"
-                                        placeholder="http://"
+                                        type="text"
+                                        name="collaborator5"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
@@ -93,62 +82,68 @@ class UserForm extends Component {
                             <Grid item xs={12} sm={6}>
                                 <div>
                                     <TextField
-                                        type="address1"
-                                        name="address1"
-                                        label="Street Address"
+                                        type="text"
+                                        name="collaborator6"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="address1"
-                                        name="address1"
-                                        label="Street Address"
+                                        type="text"
+                                        name="collaborator7"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="city"
-                                        name="city"
-                                        label="City"
+                                        type="text"
+                                        name="collaborator8"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="state"
-                                        name="state"
-                                        label="State/Province"
+                                        type="text"
+                                        name="collaborator9"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                                 <div>
                                     <TextField
-                                        type="region"
-                                        name="region"
-                                        label="Region"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div>
-                                    <TextField
-                                        type="country"
-                                        name="country"
-                                        label="Country"
-                                        fullWidth
-                                    />
-                                </div>
-                                <div>
-                                    <TextField
-                                        type="zip"
-                                        name="zip"
-                                        label="Zip/Postal Code"
+                                        type="text"
+                                        name="collaborator10"
+                                        label="Last name, First name"
                                         fullWidth
                                     />
                                 </div>
                             </Grid>
                         </Grid>
+                    </form>
+                </Grid>
+                <Grid item xs={7}>
+                    <center>
+                        <h3>Your Research Interests</h3>
+                        <p>
+                            Please enter a general description of your
+                            scientific research interests. Note: Please do not
+                            enter more than 250 words. Thanks!
+                        </p>
+                    </center>
+                    <form onSubmit={this.handleSubmit}>
+                        <div>
+                            <TextField
+                                type="text"
+                                name="interests"
+                                label="Research Interests"
+                                multiline
+                                rows={2}
+                                fullWidth
+                            />
+                        </div>
                         <br />
                         <Grid container justify="center" spacing={24}>
                             <Grid item xs={12} sm={6}>
@@ -174,4 +169,4 @@ class UserForm extends Component {
     }
 }
 
-export default UserForm
+export default CollaboratorsForm
