@@ -2,13 +2,15 @@ import React from "react"
 import { withFormik, Form } from "formik"
 import Yup from "yup"
 import TextField from "material-ui/TextField"
+import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
 import Select from "material-ui/Select"
 import { MenuItem } from "material-ui/Menu"
-// import { FormControl } from "material-ui/Form"
 import { InputLabel } from "material-ui/Input"
 import countryList from "../utils/countryList"
 import stateList from "../utils/stateList"
+import provinceList from "../utils/provinceList"
+import { HeaderStyle } from "../styles"
 
 const InnerForm = ({
     values,
@@ -21,6 +23,9 @@ const InnerForm = ({
 }) => {
     return (
         <Form>
+            <HeaderStyle>
+                <h3>Your Address and Contact Information</h3>
+            </HeaderStyle>
             <div>
                 <TextField
                     type="firstName"
@@ -136,6 +141,26 @@ const InnerForm = ({
                         })}
                 </Select>
             </div>
+            <br />
+            <div>
+                <InputLabel>Province</InputLabel>
+                <Select
+                    name="province"
+                    fullWidth
+                    value={values.province}
+                    onChange={e => setFieldValue("province", e.target.value)}>
+                    {provinceList &&
+                        provinceList.map(item => {
+                            return (
+                                <MenuItem
+                                    key={provinceList.indexOf(item)}
+                                    value={item}>
+                                    {item}
+                                </MenuItem>
+                            )
+                        })}
+                </Select>
+            </div>
             <div>
                 <TextField
                     type="region"
@@ -181,6 +206,17 @@ const InnerForm = ({
             </div>
             <div>
                 <TextField
+                    type="phone"
+                    name="phone"
+                    label="Phone Number"
+                    value={values.phone}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <div>
+                <TextField
                     type="webLink1"
                     name="webLink1"
                     label="Web Link 1"
@@ -196,6 +232,312 @@ const InnerForm = ({
                     name="webLink2"
                     label="Web Link 2"
                     value={values.webLink2}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    fullWidth
+                />
+            </div>
+            <br />
+            <HeaderStyle>
+                <h3>Your Group/Lab Members and Associates</h3>
+            </HeaderStyle>
+            <h4>
+                Option 1: Complete if you are a Supervisor, Advisor, Lab Head,
+                Group Leader, or P.I.
+            </h4>
+            <p>Enter the names of your students, post-docs, technicians</p>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student1"
+                            label="Last name, First name"
+                            value={values.student1}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student2"
+                            label="Last name, First name"
+                            value={values.student2}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student3"
+                            label="Last name, First name"
+                            value={values.student3}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student4"
+                            label="Last name, First name"
+                            value={values.student4}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student5"
+                            label="Last name, First name"
+                            value={values.student5}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student6"
+                            label="Last name, First name"
+                            value={values.student6}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student7"
+                            label="Last name, First name"
+                            value={values.student7}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student8"
+                            label="Last name, First name"
+                            value={values.student8}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student9"
+                            label="Last name, First name"
+                            value={values.student9}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="student10"
+                            label="Last name, First name"
+                            value={values.student10}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+            </Grid>
+            <h4>
+                Option 2: Complete if you have a Supervisor, Advisor, Lab Head,
+                Group Leader, or P.I.
+            </h4>
+            <p>
+                Enter the name(s) of your Supervisor, Advisor, Lab Head, Group
+                Leader, P.I.
+            </p>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="supervisor1"
+                            label="Last name, First name"
+                            value={values.supervisor1}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="supervisor2"
+                            label="Last name, First name"
+                            value={values.supervisor2}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+            </Grid>
+            <br />
+            <HeaderStyle>
+                <h3>Your Collaborators and Associates</h3>
+            </HeaderStyle>
+            <h4>
+                Enter the names of your collaborators or associates (not listed
+                above)
+            </h4>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator1"
+                            label="Last name, First name"
+                            value={values.collaborator1}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator2"
+                            label="Last name, First name"
+                            value={values.collaborator2}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator3"
+                            label="Last name, First name"
+                            value={values.collaborator3}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator4"
+                            label="Last name, First name"
+                            value={values.collaborator4}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator5"
+                            label="Last name, First name"
+                            value={values.collaborator5}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator6"
+                            label="Last name, First name"
+                            value={values.collaborator6}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator7"
+                            label="Last name, First name"
+                            value={values.collaborator7}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator8"
+                            label="Last name, First name"
+                            value={values.collaborator8}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator9"
+                            label="Last name, First name"
+                            value={values.collaborator9}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                    <div>
+                        <TextField
+                            type="text"
+                            name="collaborator10"
+                            label="Last name, First name"
+                            value={values.collaborator10}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            fullWidth
+                        />
+                    </div>
+                </Grid>
+            </Grid>
+            <br />
+            <HeaderStyle>
+                <h3>Your Research Interests</h3>
+            </HeaderStyle>
+            <h4>
+                Please enter a general description of your scientific research
+                interests. Note: Please do not enter more than 250 words.
+                Thanks!
+            </h4>
+            <div>
+                <TextField
+                    type="text"
+                    name="interests"
+                    multiline
+                    rows={3}
+                    value={values.interests}
                     onChange={handleChange}
                     onBlur={handleBlur}
                     fullWidth
@@ -224,11 +566,36 @@ const UserForm = withFormik({
         address2,
         city,
         state,
+        province,
         region,
         country,
         zip,
+        phone,
         webLink1,
-        webLink2
+        webLink2,
+        student1,
+        student2,
+        student3,
+        student4,
+        student5,
+        student6,
+        student7,
+        student8,
+        student9,
+        student10,
+        supervisor1,
+        supervisor2,
+        collaborator1,
+        collaborator2,
+        collaborator3,
+        collaborator4,
+        collaborator5,
+        collaborator6,
+        collaborator7,
+        collaborator8,
+        collaborator9,
+        collaborator10,
+        interests
     }) {
         return {
             firstName: firstName || "",
@@ -240,11 +607,36 @@ const UserForm = withFormik({
             address2: address2 || "",
             city: city || "",
             state: state || "",
+            province: province || "",
             region: region || "",
             country: country || "",
             zip: zip || "",
+            phone: phone || "",
             webLink1: webLink1 || "",
-            webLink2: webLink2 || ""
+            webLink2: webLink2 || "",
+            student1: student1 || "",
+            student2: student2 || "",
+            student3: student3 || "",
+            student4: student4 || "",
+            student5: student5 || "",
+            student6: student6 || "",
+            student7: student7 || "",
+            student8: student8 || "",
+            student9: student9 || "",
+            student10: student10 || "",
+            supervisor1: supervisor1 || "",
+            supervisor2: supervisor2 || "",
+            collaborator1: collaborator1 || "",
+            collaborator2: collaborator2 || "",
+            collaborator3: collaborator3 || "",
+            collaborator4: collaborator4 || "",
+            collaborator5: collaborator5 || "",
+            collaborator6: collaborator6 || "",
+            collaborator7: collaborator7 || "",
+            collaborator8: collaborator8 || "",
+            collaborator9: collaborator9 || "",
+            collaborator10: collaborator10 || "",
+            interests: interests || ""
         }
     },
     validationSchema: Yup.object().shape({
@@ -262,6 +654,7 @@ const UserForm = withFormik({
         region: Yup.string(),
         country: Yup.string(),
         zip: Yup.string(),
+        phone: Yup.number(),
         webLink1: Yup.string(),
         webLink2: Yup.string()
     }),
