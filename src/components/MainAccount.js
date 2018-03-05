@@ -3,6 +3,7 @@ import React, { Component } from "react"
 import SocialForm from "./SocialForm"
 import NextButton from "../common/NextButton"
 import Grid from "material-ui/Grid"
+import Paper from "material-ui/Paper"
 import TextField from "material-ui/TextField"
 import { AlignRight } from "../styles"
 
@@ -29,22 +30,24 @@ class MainAccount extends Component {
                     <center>
                         <h3>Please enter your main Dicty account</h3>
                     </center>
-                    <form onSubmit={this.handleSubmit}>
-                        <div>
-                            <TextField
-                                type="text"
-                                name="mainAccount"
-                                label="Main Account"
-                                fullWidth
-                            />
-                        </div>
-                        <br />
-                        <Grid item xs={12}>
-                            <AlignRight>
-                                <NextButton />
-                            </AlignRight>
-                        </Grid>
-                    </form>
+                    <Paper style={{ margin: "5px", padding: "5px" }}>
+                        <form onSubmit={this.handleSubmit}>
+                            <div>
+                                <TextField
+                                    type="text"
+                                    name="mainAccount"
+                                    label="Main Account"
+                                    fullWidth
+                                />
+                            </div>
+                            <br />
+                            <Grid item xs={12}>
+                                <AlignRight>
+                                    <NextButton />
+                                </AlignRight>
+                            </Grid>
+                        </form>
+                    </Paper>
                 </Grid>
             </Grid>
         )
