@@ -26,274 +26,237 @@ const InnerForm = ({
             <HeaderStyle>
                 <h3>Your Social IDs</h3>
             </HeaderStyle>
-            <div>
-                <TextField
-                    type="google"
-                    name="google"
-                    label="Google"
-                    value={values.google}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="orcid"
-                    name="orcid"
-                    label="ORCID"
-                    value={values.orcid}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="linkedin"
-                    name="linkedin"
-                    label="LinkedIn"
-                    value={values.linkedin}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="facebook"
-                    name="facebook"
-                    label="Facebook"
-                    value={values.facebook}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
+            <TextField
+                type="google"
+                name="google"
+                label="Google"
+                value={values.google}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="orcid"
+                name="orcid"
+                label="ORCID"
+                value={values.orcid}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="linkedin"
+                name="linkedin"
+                label="LinkedIn"
+                value={values.linkedin}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="facebook"
+                name="facebook"
+                label="Facebook"
+                value={values.facebook}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <br />
             <br />
             <HeaderStyle>
                 <h3>Your Address and Contact Information</h3>
             </HeaderStyle>
-            <div>
-                <TextField
-                    type="firstName"
-                    name="firstName"
-                    label="First Name"
-                    value={values.firstName}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-                {touched.firstName &&
-                    errors.firstName && (
-                        <ErrorStyle>* {errors.firstName}</ErrorStyle>
-                    )}
-            </div>
-            <div>
-                <TextField
-                    type="lastName"
-                    name="lastName"
-                    label="Last Name"
-                    value={values.lastName}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-                {touched.lastName &&
-                    errors.lastName && (
-                        <ErrorStyle>* {errors.lastName}</ErrorStyle>
-                    )}
-            </div>
-            <div>
-                <TextField
-                    type="email"
-                    name="email"
-                    label="Email"
-                    value={values.email}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-                {touched.email &&
-                    errors.email && <ErrorStyle>* {errors.email}</ErrorStyle>}
-            </div>
-            <div>
-                <TextField
-                    type="jobTitle"
-                    name="jobTitle"
-                    label="Job Title/Position"
-                    value={values.jobTitle}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="organization"
-                    name="organization"
-                    label="Organization"
-                    value={values.organization}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-                {touched.organization &&
-                    errors.organization && (
-                        <ErrorStyle>* {errors.organization}</ErrorStyle>
-                    )}
-            </div>
-            <div>
-                <TextField
-                    type="address1"
-                    name="address1"
-                    label="Street Address"
-                    value={values.address1}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="address2"
-                    name="address2"
-                    label="Street Address"
-                    value={values.address2}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="city"
-                    name="city"
-                    label="City"
-                    value={values.city}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
+            <TextField
+                type="firstName"
+                name="firstName"
+                label="First Name"
+                value={values.firstName}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            {touched.firstName &&
+                errors.firstName && (
+                    <ErrorStyle>* {errors.firstName}</ErrorStyle>
+                )}
+            <TextField
+                type="lastName"
+                name="lastName"
+                label="Last Name"
+                value={values.lastName}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            {touched.lastName &&
+                errors.lastName && <ErrorStyle>* {errors.lastName}</ErrorStyle>}
+            <TextField
+                type="email"
+                name="email"
+                label="Email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            {touched.email &&
+                errors.email && <ErrorStyle>* {errors.email}</ErrorStyle>}
+            <TextField
+                type="jobTitle"
+                name="jobTitle"
+                label="Job Title/Position"
+                value={values.jobTitle}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="organization"
+                name="organization"
+                label="Organization"
+                value={values.organization}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            {touched.organization &&
+                errors.organization && (
+                    <ErrorStyle>* {errors.organization}</ErrorStyle>
+                )}
+            <TextField
+                type="address1"
+                name="address1"
+                label="Street Address"
+                value={values.address1}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="address2"
+                name="address2"
+                label="Street Address"
+                value={values.address2}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="city"
+                name="city"
+                label="City"
+                value={values.city}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
             <br />
-            <div>
-                <InputLabel>State</InputLabel>
-                <Select
-                    name="state"
-                    fullWidth
-                    value={values.state}
-                    onChange={e => setFieldValue("state", e.target.value)}>
-                    {stateList &&
-                        stateList.map(item => {
-                            return (
-                                <MenuItem
-                                    key={stateList.indexOf(item)}
-                                    value={item}>
-                                    {item}
-                                </MenuItem>
-                            )
-                        })}
-                </Select>
-            </div>
             <br />
-            <div>
-                <InputLabel>Province</InputLabel>
-                <Select
-                    name="province"
-                    fullWidth
-                    value={values.province}
-                    onChange={e => setFieldValue("province", e.target.value)}>
-                    {provinceList &&
-                        provinceList.map(item => {
-                            return (
-                                <MenuItem
-                                    key={provinceList.indexOf(item)}
-                                    value={item}>
-                                    {item}
-                                </MenuItem>
-                            )
-                        })}
-                </Select>
-            </div>
-            <div>
-                <TextField
-                    type="region"
-                    name="region"
-                    label="Region"
-                    value={values.region}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
+            <InputLabel>State</InputLabel>
+            <Select
+                name="state"
+                fullWidth
+                value={values.state}
+                onChange={e => setFieldValue("state", e.target.value)}>
+                {stateList &&
+                    stateList.map(item => {
+                        return (
+                            <MenuItem
+                                key={stateList.indexOf(item)}
+                                value={item}>
+                                {item}
+                            </MenuItem>
+                        )
+                    })}
+            </Select>
             <br />
-            <div>
-                <InputLabel>Country</InputLabel>
-                <Select
-                    name="country"
-                    label="Country"
-                    fullWidth
-                    value={values.country}
-                    onChange={e => setFieldValue("country", e.target.value)}>
-                    {countryList &&
-                        countryList.map(item => {
-                            return (
-                                <MenuItem
-                                    key={countryList.indexOf(item)}
-                                    value={item}>
-                                    {item}
-                                </MenuItem>
-                            )
-                        })}
-                </Select>
-            </div>
-            <div>
-                <TextField
-                    type="zip"
-                    name="zip"
-                    label="Zip/Postal Code"
-                    value={values.zip}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="phone"
-                    name="phone"
-                    label="Phone Number"
-                    value={values.phone}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="webLink1"
-                    name="webLink1"
-                    label="Web Link 1"
-                    placeholder="http://"
-                    value={values.webLink1}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
-            <div>
-                <TextField
-                    type="webLink2"
-                    name="webLink2"
-                    label="Web Link 2"
-                    placeholder="http://"
-                    value={values.webLink2}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
+            <br />
+            <InputLabel>Province</InputLabel>
+            <Select
+                name="province"
+                fullWidth
+                value={values.province}
+                onChange={e => setFieldValue("province", e.target.value)}>
+                {provinceList &&
+                    provinceList.map(item => {
+                        return (
+                            <MenuItem
+                                key={provinceList.indexOf(item)}
+                                value={item}>
+                                {item}
+                            </MenuItem>
+                        )
+                    })}
+            </Select>
+            <TextField
+                type="region"
+                name="region"
+                label="Region"
+                value={values.region}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <br />
+            <br />
+            <InputLabel>Country</InputLabel>
+            <Select
+                name="country"
+                label="Country"
+                fullWidth
+                value={values.country}
+                onChange={e => setFieldValue("country", e.target.value)}>
+                {countryList &&
+                    countryList.map(item => {
+                        return (
+                            <MenuItem
+                                key={countryList.indexOf(item)}
+                                value={item}>
+                                {item}
+                            </MenuItem>
+                        )
+                    })}
+            </Select>
+            <TextField
+                type="zip"
+                name="zip"
+                label="Zip/Postal Code"
+                value={values.zip}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="phone"
+                name="phone"
+                label="Phone Number"
+                value={values.phone}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="webLink1"
+                name="webLink1"
+                label="Web Link 1"
+                placeholder="http://"
+                value={values.webLink1}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <TextField
+                type="webLink2"
+                name="webLink2"
+                label="Web Link 2"
+                placeholder="http://"
+                value={values.webLink2}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <br />
             <br />
             <HeaderStyle>
                 <h3>Your Group/Lab Members and Associates</h3>
@@ -305,118 +268,98 @@ const InnerForm = ({
             <p>Enter the names of your students, post-docs, technicians</p>
             <Grid container justify="center" spacing={24}>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student1"
-                            label="Last name, First name"
-                            value={values.student1}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student2"
-                            label="Last name, First name"
-                            value={values.student2}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student3"
-                            label="Last name, First name"
-                            value={values.student3}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student4"
-                            label="Last name, First name"
-                            value={values.student4}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student5"
-                            label="Last name, First name"
-                            value={values.student5}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="student1"
+                        label="Last name, First name"
+                        value={values.student1}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student2"
+                        label="Last name, First name"
+                        value={values.student2}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student3"
+                        label="Last name, First name"
+                        value={values.student3}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student4"
+                        label="Last name, First name"
+                        value={values.student4}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student5"
+                        label="Last name, First name"
+                        value={values.student5}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student6"
-                            label="Last name, First name"
-                            value={values.student6}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student7"
-                            label="Last name, First name"
-                            value={values.student7}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student8"
-                            label="Last name, First name"
-                            value={values.student8}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student9"
-                            label="Last name, First name"
-                            value={values.student9}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="student10"
-                            label="Last name, First name"
-                            value={values.student10}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="student6"
+                        label="Last name, First name"
+                        value={values.student6}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student7"
+                        label="Last name, First name"
+                        value={values.student7}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student8"
+                        label="Last name, First name"
+                        value={values.student8}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student9"
+                        label="Last name, First name"
+                        value={values.student9}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="student10"
+                        label="Last name, First name"
+                        value={values.student10}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
             </Grid>
             <h4>
@@ -429,30 +372,26 @@ const InnerForm = ({
             </p>
             <Grid container justify="center" spacing={24}>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="supervisor1"
-                            label="Last name, First name"
-                            value={values.supervisor1}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="supervisor1"
+                        label="Last name, First name"
+                        value={values.supervisor1}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="supervisor2"
-                            label="Last name, First name"
-                            value={values.supervisor2}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="supervisor2"
+                        label="Last name, First name"
+                        value={values.supervisor2}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
             </Grid>
             <br />
@@ -465,118 +404,98 @@ const InnerForm = ({
             </h4>
             <Grid container justify="center" spacing={24}>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator1"
-                            label="Last name, First name"
-                            value={values.collaborator1}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator2"
-                            label="Last name, First name"
-                            value={values.collaborator2}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator3"
-                            label="Last name, First name"
-                            value={values.collaborator3}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator4"
-                            label="Last name, First name"
-                            value={values.collaborator4}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator5"
-                            label="Last name, First name"
-                            value={values.collaborator5}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="collaborator1"
+                        label="Last name, First name"
+                        value={values.collaborator1}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator2"
+                        label="Last name, First name"
+                        value={values.collaborator2}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator3"
+                        label="Last name, First name"
+                        value={values.collaborator3}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator4"
+                        label="Last name, First name"
+                        value={values.collaborator4}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator5"
+                        label="Last name, First name"
+                        value={values.collaborator5}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
                 <Grid item xs={12} sm={6}>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator6"
-                            label="Last name, First name"
-                            value={values.collaborator6}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator7"
-                            label="Last name, First name"
-                            value={values.collaborator7}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator8"
-                            label="Last name, First name"
-                            value={values.collaborator8}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator9"
-                            label="Last name, First name"
-                            value={values.collaborator9}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
-                    <div>
-                        <TextField
-                            type="text"
-                            name="collaborator10"
-                            label="Last name, First name"
-                            value={values.collaborator10}
-                            onChange={handleChange}
-                            onBlur={handleBlur}
-                            fullWidth
-                        />
-                    </div>
+                    <TextField
+                        type="text"
+                        name="collaborator6"
+                        label="Last name, First name"
+                        value={values.collaborator6}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator7"
+                        label="Last name, First name"
+                        value={values.collaborator7}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator8"
+                        label="Last name, First name"
+                        value={values.collaborator8}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator9"
+                        label="Last name, First name"
+                        value={values.collaborator9}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
+                    <TextField
+                        type="text"
+                        name="collaborator10"
+                        label="Last name, First name"
+                        value={values.collaborator10}
+                        onChange={handleChange}
+                        onBlur={handleBlur}
+                        fullWidth
+                    />
                 </Grid>
             </Grid>
             <br />
@@ -588,18 +507,17 @@ const InnerForm = ({
                 interests. Note: Please do not enter more than 250 words.
                 Thanks!
             </h4>
-            <div>
-                <TextField
-                    type="text"
-                    name="interests"
-                    multiline
-                    rows={3}
-                    value={values.interests}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    fullWidth
-                />
-            </div>
+            <TextField
+                type="text"
+                name="interests"
+                multiline
+                rows={3}
+                value={values.interests}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                fullWidth
+            />
+            <br />
             <br />
             <Button
                 type="submit"
