@@ -262,9 +262,12 @@ const InnerForm = ({
             <HeaderStyle>
                 <h3>Your Group/Lab Members and Associates</h3>
             </HeaderStyle>
+            <center>
+                <h3>Option 1:</h3>
+            </center>
             <h4>
-                Option 1: Complete if you are a Supervisor, Advisor, Lab Head,
-                Group Leader, or P.I.
+                Complete if you are a Supervisor, Advisor, Lab Head, Group
+                Leader, or P.I.
             </h4>
             <p>Enter the names of your students, post-docs, technicians</p>
             <Grid container justify="center" spacing={24}>
@@ -272,7 +275,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student1"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student1}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -281,7 +284,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student2"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student2}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -290,7 +293,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student3"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student3}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -299,7 +302,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student4"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student4}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -308,7 +311,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student5"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student5}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -319,7 +322,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student6"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student6}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -328,7 +331,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student7"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student7}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -337,7 +340,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student8"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student8}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -346,7 +349,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student9"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student9}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -355,7 +358,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="student10"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.student10}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -363,9 +366,12 @@ const InnerForm = ({
                     />
                 </Grid>
             </Grid>
+            <center>
+                <h3>Option 2: </h3>
+            </center>
             <h4>
-                Option 2: Complete if you have a Supervisor, Advisor, Lab Head,
-                Group Leader, or P.I.
+                Complete if you have a Supervisor, Advisor, Lab Head, Group
+                Leader, or P.I.
             </h4>
             <p>
                 Enter the name(s) of your Supervisor, Advisor, Lab Head, Group
@@ -376,7 +382,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="supervisor1"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.supervisor1}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -387,7 +393,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="supervisor2"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.supervisor2}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -408,7 +414,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator1"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator1}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -417,7 +423,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator2"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator2}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -426,7 +432,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator3"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator3}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -435,7 +441,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator4"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator4}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -444,7 +450,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator5"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator5}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -455,7 +461,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator6"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator6}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -464,7 +470,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator7"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator7}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -473,7 +479,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator8"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator8}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -482,7 +488,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator9"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator9}
                         onChange={handleChange}
                         onBlur={handleBlur}
@@ -491,7 +497,7 @@ const InnerForm = ({
                     <TextField
                         type="text"
                         name="collaborator10"
-                        label="Last name, First name"
+                        placeholder="Last name, First name"
                         value={values.collaborator10}
                         onChange={handleChange}
                         onBlur={handleBlur}
