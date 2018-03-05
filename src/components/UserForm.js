@@ -10,7 +10,7 @@ import { InputLabel } from "material-ui/Input"
 import countryList from "../utils/countryList"
 import stateList from "../utils/stateList"
 import provinceList from "../utils/provinceList"
-import { HeaderStyle, ErrorStyle } from "../styles"
+import { HeaderStyle, ErrorStyle, AlignLeft, AlignRight } from "../styles"
 
 const InnerForm = ({
     values,
@@ -19,7 +19,8 @@ const InnerForm = ({
     isSubmitting,
     handleChange,
     handleBlur,
-    setFieldValue
+    setFieldValue,
+    handleReset
 }) => {
     return (
         <Form>
@@ -519,13 +520,29 @@ const InnerForm = ({
             />
             <br />
             <br />
-            <Button
-                type="submit"
-                variant="raised"
-                color="primary"
-                disabled={isSubmitting}>
-                {isSubmitting ? "Submitting..." : "Submit"}
-            </Button>
+            <Grid container justify="center" spacing={24}>
+                <Grid item xs={12} sm={6}>
+                    <AlignLeft>
+                        <Button
+                            color="secondary"
+                            variant="raised"
+                            onClick={handleReset}>
+                            Reset
+                        </Button>
+                    </AlignLeft>
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                    <AlignRight>
+                        <Button
+                            type="submit"
+                            variant="raised"
+                            color="primary"
+                            disabled={isSubmitting}>
+                            {isSubmitting ? "Submitting..." : "Submit"}
+                        </Button>
+                    </AlignRight>
+                </Grid>
+            </Grid>
         </Form>
     )
 }

@@ -26,3 +26,11 @@ export const ErrorStyle = styled.div`
     margin-top: 5px;
     margin-bottom: 10px;
 `
+
+export const AlignLeft = styled.div`
+    text-align: left;
+`
+
+export const AlignRight = styled.div`
+    text-align: right;
+`
