@@ -25,47 +25,6 @@ const InnerForm = ({
     return (
         <Form>
             <HeaderStyle>
-                <h3>Your Social IDs</h3>
-            </HeaderStyle>
-            <TextField
-                type="google"
-                name="google"
-                label="Google"
-                value={values.google}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                fullWidth
-            />
-            <TextField
-                type="orcid"
-                name="orcid"
-                label="ORCID"
-                value={values.orcid}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                fullWidth
-            />
-            <TextField
-                type="linkedin"
-                name="linkedin"
-                label="LinkedIn"
-                value={values.linkedin}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                fullWidth
-            />
-            <TextField
-                type="facebook"
-                name="facebook"
-                label="Facebook"
-                value={values.facebook}
-                onChange={handleChange}
-                onBlur={handleBlur}
-                fullWidth
-            />
-            <br />
-            <br />
-            <HeaderStyle>
                 <h3>Your Address and Contact Information</h3>
             </HeaderStyle>
             <TextField
@@ -524,41 +483,12 @@ const InnerForm = ({
                 onBlur={handleBlur}
                 fullWidth
             />
-            <br />
-            <br />
-            <Grid container justify="center" spacing={24}>
-                <Grid item xs={12} sm={6}>
-                    <AlignLeft>
-                        <Button
-                            color="secondary"
-                            variant="raised"
-                            onClick={handleReset}>
-                            Reset
-                        </Button>
-                    </AlignLeft>
-                </Grid>
-                <Grid item xs={12} sm={6}>
-                    <AlignRight>
-                        <Button
-                            type="submit"
-                            variant="raised"
-                            color="primary"
-                            disabled={isSubmitting}>
-                            {isSubmitting ? "Submitting..." : "Submit"}
-                        </Button>
-                    </AlignRight>
-                </Grid>
-            </Grid>
         </Form>
     )
 }
 
-const UserForm = withFormik({
+const NewUserForm = withFormik({
     mapPropsToValues({
-        google,
-        orcid,
-        linkedin,
-        facebook,
         firstName,
         lastName,
         email,
@@ -600,10 +530,6 @@ const UserForm = withFormik({
         interests
     }) {
         return {
-            google: google || "",
-            orcid: orcid || "",
-            linkedin: linkedin || "",
-            facebook: facebook || "",
             firstName: firstName || "",
             lastName: lastName || "",
             email: email || "",
@@ -674,4 +600,4 @@ const UserForm = withFormik({
     }
 })(InnerForm)
 
-export default UserForm
+export default NewUserForm

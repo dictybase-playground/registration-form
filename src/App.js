@@ -1,5 +1,5 @@
 import React from "react"
-import UserForm from "./components/UserForm"
+import MainEmailForm from "./components/MainEmailForm"
 import Paper from "material-ui/Paper"
 import Grid from "material-ui/Grid"
 import { Background } from "./styles"
@@ -13,7 +13,7 @@ const App = () => {
             <Grid container justify="center" spacing={24}>
                 <Grid item xs={7}>
                     <Paper style={{ padding: "10px" }}>
-                        <UserForm />
+                        <MainEmailForm />
                     </Paper>
                 </Grid>
             </Grid>
