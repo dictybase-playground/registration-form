@@ -7,6 +7,10 @@ import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
 import { HeaderStyle, AlignRight } from "../styles"
 
+/**
+ * This is the form input where the user enters their main Dictybase email address
+ */
+
 const InnerForm = ({
     values,
     errors,

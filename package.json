@@ -1,24 +1,28 @@
 {
-  "name": "registration-form",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "formik": "^0.11.11",
-    "material-ui": "^1.0.0-beta.35",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1",
-    "styled-components": "^3.1.6",
-    "yup": "^0.24.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "flow-bin": "^0.68.0",
-    "react-test-renderer": "^16.2.0"
-  }
+    "name": "registration-form",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "flow": "flow",
+        "styleguide": "styleguidist server",
+        "styleguide:build": "styleguidist build"
+    },
+    "dependencies": {
+        "formik": "^0.11.11",
+        "material-ui": "^1.0.0-beta.35",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "react-scripts": "1.1.1",
+        "styled-components": "^3.1.6",
+        "yup": "^0.24.1"
+    },
+    "devDependencies": {
+        "flow-bin": "^0.68.0",
+        "react-styleguidist": "^6.2.7",
+        "react-test-renderer": "^16.2.0"
+    }
 }

@@ -4,14 +4,17 @@ import { withFormik, Form } from "formik"
 import Yup from "yup"
 import TextField from "material-ui/TextField"
 import Grid from "material-ui/Grid"
-import Button from "material-ui/Button"
 import Select from "material-ui/Select"
 import { MenuItem } from "material-ui/Menu"
 import { InputLabel } from "material-ui/Input"
 import countryList from "../utils/countryList"
 import stateList from "../utils/stateList"
 import provinceList from "../utils/provinceList"
-import { HeaderStyle, ErrorStyle, AlignLeft, AlignRight } from "../styles"
+import { HeaderStyle, ErrorStyle } from "../styles"
+
+/**
+ * This is the creation form for new users
+ */
 
 const InnerForm = ({
     values,

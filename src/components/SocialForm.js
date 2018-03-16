@@ -5,10 +5,11 @@ import Yup from "yup"
 import TextField from "material-ui/TextField"
 import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
-import Select from "material-ui/Select"
-import { MenuItem } from "material-ui/Menu"
-import { InputLabel } from "material-ui/Input"
-import { HeaderStyle, ErrorStyle, AlignLeft, AlignRight } from "../styles"
+import { HeaderStyle, AlignLeft, AlignRight } from "../styles"
+
+/**
+ * This is the form input where the user enters their social media emails and/or ORCID number
+ */
 
 const InnerForm = ({
     values,
