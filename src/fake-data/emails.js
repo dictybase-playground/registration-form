@@ -1,3 +1,4 @@
+// @flow
 const emails = [
     {
         "test@test.com": {

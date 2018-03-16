@@ -1,3 +1,4 @@
+// @flow
 const provinceList = [
     "Alberta",
     "British Columbia",

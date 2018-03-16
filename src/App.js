@@ -1,3 +1,4 @@
+// @flow
 import React from "react"
 import MainEmailForm from "./components/MainEmailForm"
 import Paper from "material-ui/Paper"
