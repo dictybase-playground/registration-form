@@ -100,7 +100,7 @@ const SocialForm = withFormik({
     },
     validationSchema: Yup.object().shape({
         google: Yup.string().email("Email is not valid"),
-        orcid: Yup.string().required("ORCID is mandatory"),
+        orcid: Yup.number().required("ORCID is mandatory"),
         linkedin: Yup.string(),
         facebook: Yup.string()
     }),
