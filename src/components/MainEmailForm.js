@@ -4,7 +4,7 @@ import Yup from "yup"
 import TextField from "material-ui/TextField"
 import Grid from "material-ui/Grid"
 import Button from "material-ui/Button"
-import { HeaderStyle, ErrorStyle, AlignRight } from "../styles"
+import { HeaderStyle, AlignRight } from "../styles"
 
 const InnerForm = ({
     values,
