@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of SocialForm 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-bwzfXH gnZAKr"
+  >
+    <h3>
+      Your Social IDs
+    </h3>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Google
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="google"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="google"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      ORCID
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="orcid"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="orcid"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      LinkedIn
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="linkedin"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="linkedin"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Facebook
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="facebook"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="facebook"
+        value=""
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    className="MuiGrid-typeContainer-30 MuiGrid-spacing-xs-24-53 MuiGrid-justify-xs-center-47"
+  >
+    <div
+      className="MuiGrid-typeItem-31 MuiGrid-grid-xs-12-67 MuiGrid-grid-sm-6-74"
+    >
+      <div
+        className="sc-bxivhb betCoo"
+      >
+        <button
+          className="MuiButtonBase-root-135 MuiButton-root-120 MuiButton-raised-125 MuiButton-raisedSecondary-128"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="button"
+        >
+          <span
+            className="MuiButton-label-121"
+          >
+            Reset
+          </span>
+          <span
+            className="MuiTouchRipple-root-137"
+          />
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-typeItem-31 MuiGrid-grid-xs-12-67 MuiGrid-grid-sm-6-74"
+    >
+      <div
+        className="sc-ifAKCX kJzvrZ"
+      >
+        <button
+          className="MuiButtonBase-root-135 MuiButton-root-120 MuiButton-raised-125 MuiButton-raisedPrimary-127"
+          disabled={false}
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex="0"
+          type="submit"
+        >
+          <span
+            className="MuiButton-label-121"
+          >
+            Submit
+          </span>
+          <span
+            className="MuiTouchRipple-root-137"
+          />
+        </button>
+      </div>
+    </div>
+  </div>
+</form>
+`;
