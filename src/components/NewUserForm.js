@@ -122,7 +122,7 @@ const InnerForm = ({
                 name="state"
                 fullWidth
                 value={values.state}
-                onChange={e => setFieldValue("state", e.target.value)}>
+                onChange={(e: any) => setFieldValue("state", e.target.value)}>
                 {stateList &&
                     stateList.map(item => {
                         return (
@@ -141,7 +141,9 @@ const InnerForm = ({
                 name="province"
                 fullWidth
                 value={values.province}
-                onChange={e => setFieldValue("province", e.target.value)}>
+                onChange={(e: any) =>
+                    setFieldValue("province", e.target.value)
+                }>
                 {provinceList &&
                     provinceList.map(item => {
                         return (
@@ -170,7 +172,7 @@ const InnerForm = ({
                 label="Country"
                 fullWidth
                 value={values.country}
-                onChange={e => setFieldValue("country", e.target.value)}>
+                onChange={(e: any) => setFieldValue("country", e.target.value)}>
                 {countryList &&
                     countryList.map(item => {
                         return (
