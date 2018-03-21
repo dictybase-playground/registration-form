@@ -2,6 +2,12 @@
   "name": "registration-form",
   "version": "0.1.0",
   "private": true,
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
+      "git add"
+    ]
+  },
   "dependencies": {
     "formik": "^0.11.11",
     "material-ui": "^1.0.0-beta.35",
@@ -16,5 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1"
   }
 }
