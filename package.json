@@ -17,14 +17,17 @@
     "styled-components": "^3.1.6",
     "yup": "^0.24.1"
   },
+  "devDependencies": {
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "flow-bin": "^0.68.0",
+    "react-styleguidist": "^6.2.7",
+    "react-test-renderer": "^16.2.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "lint-staged": "^7.0.0",
-    "prettier": "^1.11.1"
   }
 }

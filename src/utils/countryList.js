@@ -1,3 +1,4 @@
+// @flow
 const countryList = [
     "Afghanistan",
     "Albania",

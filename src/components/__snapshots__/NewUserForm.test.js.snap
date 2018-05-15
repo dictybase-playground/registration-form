@@ -1,0 +1,1582 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matching a snapshot of NewUserForm 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="sc-bwzfXH gnZAKr"
+  >
+    <h3>
+      Your Address and Contact Information
+    </h3>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      First Name
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="firstName"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="firstName"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Last Name
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="lastName"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="lastName"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Email
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="email"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="email"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Job Title/Position
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="jobTitle"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="jobTitle"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Organization
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="organization"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="organization"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Street Address
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="address1"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="address1"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Street Address
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="address2"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="address2"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      City
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="city"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="city"
+        value=""
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <label
+    className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-animated-9"
+    data-shrink={undefined}
+  >
+    State
+  </label>
+  <div
+    className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-inkbar-17 MuiInput-underline-21"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      className="MuiSelect-root-30"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select-31 MuiSelect-selectMenu-32 MuiInput-input-24"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={undefined}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-invalid={undefined}
+        aria-required={undefined}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        defaultValue={undefined}
+        id={undefined}
+        name="state"
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="hidden"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-35 MuiSelect-icon-34"
+        color={undefined}
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <br />
+  <br />
+  <label
+    className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-animated-9"
+    data-shrink={undefined}
+  >
+    Province
+  </label>
+  <div
+    className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-inkbar-17 MuiInput-underline-21"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      className="MuiSelect-root-30"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select-31 MuiSelect-selectMenu-32 MuiInput-input-24"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={undefined}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-invalid={undefined}
+        aria-required={undefined}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        defaultValue={undefined}
+        id={undefined}
+        name="province"
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="hidden"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-35 MuiSelect-icon-34"
+        color={undefined}
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Region
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="region"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="region"
+        value=""
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <label
+    className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-animated-9"
+    data-shrink={undefined}
+  >
+    Country
+  </label>
+  <div
+    className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-inkbar-17 MuiInput-underline-21"
+    label="Country"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      className="MuiSelect-root-30"
+    >
+      <div
+        aria-haspopup="true"
+        aria-owns={null}
+        aria-pressed="false"
+        className="MuiSelect-select-31 MuiSelect-selectMenu-32 MuiInput-input-24"
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={undefined}
+        onKeyDown={[Function]}
+        role="button"
+        tabIndex={0}
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "&#8203",
+            }
+          }
+        />
+      </div>
+      <input
+        aria-invalid={undefined}
+        aria-required={undefined}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        defaultValue={undefined}
+        id={undefined}
+        name="country"
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="hidden"
+        value=""
+      />
+      <svg
+        aria-hidden="true"
+        className="MuiSvgIcon-root-35 MuiSelect-icon-34"
+        color={undefined}
+        focusable="false"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M7 10l5 5 5-5z"
+        />
+      </svg>
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Zip/Postal Code
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="zip"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="zip"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Phone Number
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="phone"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="phone"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Web Link 1
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="webLink1"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder="http://"
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="webLink1"
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <label
+      className="MuiFormLabel-root-11 MuiInputLabel-root-5 MuiInputLabel-formControl-6 MuiInputLabel-animated-9"
+      data-shrink={false}
+      htmlFor={undefined}
+    >
+      Web Link 2
+    </label>
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <input
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputType-27"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="webLink2"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder="http://"
+        readOnly={undefined}
+        required={undefined}
+        rows={undefined}
+        type="webLink2"
+        value=""
+      />
+    </div>
+  </div>
+  <br />
+  <br />
+  <div
+    className="sc-bwzfXH gnZAKr"
+  >
+    <h3>
+      Your Group/Lab Members and Associates
+    </h3>
+  </div>
+  <center>
+    <h3>
+      Option 1:
+    </h3>
+  </center>
+  <h4>
+    Complete if you are a Supervisor, Advisor, Lab Head, Group Leader, or P.I.
+  </h4>
+  <p>
+    Enter the names of your students, post-docs, technicians
+  </p>
+  <div
+    className="MuiGrid-typeContainer-46 MuiGrid-spacing-xs-24-69 MuiGrid-justify-xs-center-63"
+  >
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student1"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student2"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student3"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student4"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student5"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student6"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student7"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student8"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student9"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="student10"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <h3>
+      Option 2: 
+    </h3>
+  </center>
+  <h4>
+    Complete if you have a Supervisor, Advisor, Lab Head, Group Leader, or P.I.
+  </h4>
+  <p>
+    Enter the name(s) of your Supervisor, Advisor, Lab Head, Group Leader, P.I.
+  </p>
+  <div
+    className="MuiGrid-typeContainer-46 MuiGrid-spacing-xs-24-69 MuiGrid-justify-xs-center-63"
+  >
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="supervisor1"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="supervisor2"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="sc-bwzfXH gnZAKr"
+  >
+    <h3>
+      Your Collaborators and Associates
+    </h3>
+  </div>
+  <h4>
+    Enter the names of your collaborators or associates (not listed above)
+  </h4>
+  <div
+    className="MuiGrid-typeContainer-46 MuiGrid-spacing-xs-24-69 MuiGrid-justify-xs-center-63"
+  >
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator1"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator2"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator3"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator4"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator5"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-typeItem-47 MuiGrid-grid-xs-12-83 MuiGrid-grid-sm-6-90"
+    >
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator6"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator7"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator8"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator9"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        aria-describedby={undefined}
+        className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+        onBlur={[Function]}
+        onFocus={[Function]}
+      >
+        <div
+          className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-underline-21"
+          onBlur={[Function]}
+          onFocus={[Function]}
+        >
+          <input
+            aria-invalid={false}
+            aria-required={false}
+            autoComplete={undefined}
+            autoFocus={undefined}
+            className="MuiInput-input-24"
+            defaultValue={undefined}
+            disabled={false}
+            id={undefined}
+            name="collaborator10"
+            onChange={[Function]}
+            onKeyDown={undefined}
+            onKeyUp={undefined}
+            placeholder="Last name, First name"
+            readOnly={undefined}
+            required={undefined}
+            rows={undefined}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="sc-bwzfXH gnZAKr"
+  >
+    <h3>
+      Your Research Interests
+    </h3>
+  </div>
+  <h4>
+    Please enter a general description of your scientific research interests. Note: Please do not enter more than 250 words. Thanks!
+  </h4>
+  <div
+    aria-describedby={undefined}
+    className="MuiFormControl-root-1 MuiFormControl-fullWidth-4"
+    onBlur={[Function]}
+    onFocus={[Function]}
+  >
+    <div
+      className="MuiInput-root-15 MuiInput-fullWidth-23 MuiInput-formControl-16 MuiInput-inkbar-17 MuiInput-multiline-22 MuiInput-underline-21"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    >
+      <textarea
+        aria-invalid={false}
+        aria-required={false}
+        autoComplete={undefined}
+        autoFocus={undefined}
+        className="MuiInput-input-24 MuiInput-inputMultiline-28"
+        defaultValue={undefined}
+        disabled={false}
+        id={undefined}
+        name="interests"
+        onChange={[Function]}
+        onKeyDown={undefined}
+        onKeyUp={undefined}
+        placeholder={undefined}
+        readOnly={undefined}
+        required={undefined}
+        rows={3}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</form>
+`;
