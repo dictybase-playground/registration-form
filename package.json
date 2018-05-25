@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "*.{js,jsx,json,css}": [
       "prettier --no-semi --trailing-comma all --jsx-bracket-same-line true --write",
       "git add"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
   },
   "dependencies": {
     "formik": "^0.11.11",
@@ -18,9 +23,10 @@
     "yup": "^0.24.1"
   },
   "devDependencies": {
+    "flow-bin": "^0.73.0",
+    "husky": "^0.14.3",
     "lint-staged": "^7.0.0",
     "prettier": "^1.11.1",
-    "flow-bin": "^0.68.0",
     "react-styleguidist": "^6.2.7",
     "react-test-renderer": "^16.2.0"
   },
@@ -28,6 +34,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged"
   }
 }
